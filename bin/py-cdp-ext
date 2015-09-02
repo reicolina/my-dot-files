@@ -1,0 +1,1 @@
+/bin/bash -c ". ~/github/browser-extensions/python-env/bin/activate; exec /bin/bash -i"

@@ -1,0 +1,5 @@
+cd ~/source/web-portal/web-portal
+#mvn clean install -Dmaven.test.skip=true
+#mvn verify --activate-profiles mysql t7:run -DskipUnitTests=true -Drunlocal
+mvn -DskipTests=true -DskipUnitTests=true -Drunlocal -Dwithout-mysql-embedded -Dmysql-local clean verify
+

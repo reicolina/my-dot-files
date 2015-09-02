@@ -1,0 +1,2 @@
+forge-extension build $1
+forge-extension package $1

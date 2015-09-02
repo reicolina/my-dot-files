@@ -1,0 +1,3 @@
+cd source/web-portal/web-portal
+#mvn clean package t7:run -DskipUnitTests=true
+mvn clean verify -Dmysql -Dmysql-embedded -Drunlocal

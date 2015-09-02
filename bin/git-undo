@@ -1,0 +1,2 @@
+# undo last push to gerrit, leaving changes as unstaged code within your working copy
+git reset HEAD~1

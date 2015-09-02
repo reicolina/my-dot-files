@@ -1,0 +1,2 @@
+cd ~/source/web-portal/web-portal
+mvnDebug -DskipTests=true -DskipUnitTests=true -Drunlocal -Dmysql.instance=test -Dcid.instance=test -Dadmin-api.instance=test clean verify

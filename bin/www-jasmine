@@ -1,0 +1,2 @@
+cd ~/source/web-portal/web-portal
+mvn jasmine:bdd

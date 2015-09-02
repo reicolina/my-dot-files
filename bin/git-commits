@@ -1,0 +1,3 @@
+echo
+git log --pretty=format:'%s | Author: %an' $1...$2 --no-merges
+echo

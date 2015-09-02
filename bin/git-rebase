@@ -1,0 +1,2 @@
+currentBranch=`git branch | sed -n '/\* /s///p'`;
+git rebase origin/$currentBranch $currentBranch;

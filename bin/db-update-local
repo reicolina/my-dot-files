@@ -1,0 +1,2 @@
+cd ~/source/PingConnectSaasDataDeathStar/dao
+mvn -P mysql dbdeploy:update

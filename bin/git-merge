@@ -1,0 +1,16 @@
+echo "Merging $1 to $2"
+echo
+read -p "Announce that $1 is closed until merge is finished. Once that's done press any key to continue... " -n1 -s
+echo
+git fetch
+git checkout $2
+git pull --rebase
+git merge origin/$1 --no-ff
+echo
+read -p "Fix conflicts (if any). Once that's done press any key to continue... " -n1 -s
+echo
+git commit --amend
+git push origin $2:refs/for/$2
+echo
+read -p "Announce that $1 is open for business. Once that's done press any key to continue... " -n1 -s
+echo
